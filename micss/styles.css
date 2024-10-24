@@ -1,0 +1,814 @@
+.sectionLoginRegistro {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  #enviar,
+#crearCuenta {
+  background-color: #4caf50; /* Verde similar al menú */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Agregado: Espacio entre los botones */
+}
+
+#enviar:hover,
+#crearCuenta:hover {
+  background-color: #45a049; /* Verde oscuro al pasar el cursor sobre el botón */
+}
+
+#crearCuenta {
+  margin-left: 10px; /* Agregado: Espacio entre los botones */
+}
+
+#divForm {
+  background-color: #333; /* Fondo oscuro similar al menú */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  transition: transform 0.3s ease;
+  margin-top: 20px; /* Agregado: Espacio entre el formulario y los botones */
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+#divForm:hover {
+  transform: scale(1.05);
+}
+
+}
+
+
+
+
+header {
+  top: 0;
+  right: 0;
+  width: 1190px;
+  height: 10vh;
+  background-color: rgb(10, 10, 10); /* Cambia el color de fondo a azul oscuro */
+  color: #66fcf1; /* Cambia el color del texto a uno que contraste */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+}
+
+#imagenCabecera {
+  height: 100%;
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  flex: 1;
+}
+
+.menu {
+  width: 20%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+
+#cerrarSesion {
+  color: #ff3333;
+}
+
+#cerrarSesion:hover {
+  background-color: #990000;
+}
+
+#cuerpo {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover; /* Opcional: ajusta la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Opcional: evita la repetición de la imagen */
+  background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+#buscador {
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-color: #333; /* Fondo oscuro similar al menú */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#buscador input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff; /* Texto blanco */
+}
+
+#buscador input[type="submit"] {
+  background-color: #4caf50; /* Verde similar al menú */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buscador input[type="submit"]:hover {
+  background-color: #45a049; /* Verde oscuro al pasar el cursor */
+}
+
+#tabla {
+  flex: 1;
+  margin-top: 10px;
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  background-color: #333; /* Fondo oscuro similar al menú */
+  color: #fff; /* Texto blanco */
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  background-color: #4caf50; /* Verde similar al menú */
+}
+
+tbody {
+  background-color: #333; /* Fondo oscuro similar al menú */
+}
+
+tbody tr:hover {
+  background-color: #666; /* Fondo más oscuro al pasar el cursor sobre las filas */
+}
+
+tbody td {
+  position: relative;
+  background-color: #333;
+}
+
+tbody #a:hover {
+  position: relative;
+  background-color: #3c3c99;
+}
+
+#prestado {
+  padding: 10px;
+  background-color: #b10000; /* Rojo oscuro */
+  color: #000; /* Texto negro */
+}
+
+#adquirir {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #007b28; /* Verde oscuro */
+  color: #000; /* Texto negro */
+}
+
+#adquirir:hover {
+  background-color: chartreuse;
+}
+
+#devolver {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #00aeff; /* Azul claro */
+  color: #000; /* Texto negro */
+}
+#devolver:hover{
+  background-color: #7dd4fc;
+}
+tbody #info {
+  padding: 15px;
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+tbody #devolver:hover {
+  background-color: rgb(133, 170, 226);
+}
+
+
+footer {
+  width: 1190px;
+  background-color: black; /* Cambia el color de fondo a azul oscuro */
+  color: #66fcf1; /* Cambia el color del texto a uno que contraste */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 10vh;
+}
+
+footer img {
+  margin-right: 10px;
+  max-width: 50px;
+  height: 100%;
+}
+
+.sectionAnadirLibro {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px;
+  text-align: center;
+}
+
+.sectionAnadirLibro h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.sectionAnadirLibro p {
+  font-size: 18px;
+  color: red; /* Color de texto rojo para los mensajes de error */
+}
+
+.sectionAnadirLibro label {
+  font-weight: bold;
+}
+
+.sectionAnadirLibro input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 2px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sectionAnadirLibro #btnNuevoLibro {
+  background-color: #4caf50; /* Verde similar al menú */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sectionAnadirLibro #btnNuevoLibro:hover {
+  background-color: #45a049; /* Verde oscuro al pasar el cursor sobre el botón */
+}
+
+
+/* Estilo para el contenedor del perfil */
+.perfil {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente blanco */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100vh;
+  height: 60vh;
+  text-align: center;
+  h2 {
+    font-size: 24px;
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555; /* Color de texto un poco más claro */
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  a {
+  
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  a:hover {
+    background-color: rgb(102, 7, 7);
+  }
+}
+.sectionBuscar {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+
+h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: red;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#btnNuevoLibro {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btnNuevoLibro:hover {
+  background-color: #297fb8;
+}
+}
+#paginacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  background-color: #333; /* Fondo oscuro similar al menú */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#pagAtras,
+#pagAdelante {
+  background-color: #4caf50; /* Verde similar al menú */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#pagAtras:hover,
+#pagAdelante:hover {
+  background-color: #45a049; /* Verde oscuro al pasar el cursor */
+}
+
+#paginacion label {
+  color: #66fcf1;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+
+#infoDiv {
+  margin-top: 20px;
+  width: 700px;
+  height: 500px;
+  border-radius: 25px;
+background: #e0e0e0;
+box-shadow:  13px 13px 26px #c1c1c1,
+             -13px -13px 26px #ffffff;
+    h2{
+      text-align: center;
+             }
+}
+
+#sinBoton {
+  display: flex;
+  flex-direction: row;
+    width: 700px;
+    height: 370px;
+    margin: auto;
+    padding: 20px, 20px;
+    text-align: justify;
+    
+}
+#infoLibro{
+  margin-top: 30px;
+  text-align: center;
+  width: 400px;
+  font-size: large;
+  font-weight: bold;
+}
+
+#imagenLibro {
+
+  width: 300px;
+}
+
+#imagenLibro img {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#volverLista {
+  text-align: center;
+  flex-basis: 100%;
+  margin-top: 15px;
+}
+
+#volverLista #volverCuerpo {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#volverLista #eliminarEjemplar {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #af4c4c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#volverLista #adquirir {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgb(92, 219, 109);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#volverLista #devolver {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgb(0, 151, 161);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.sectionRegistro {
+  margin-top: 10px;
+  width: 1100px;
+  height: 500px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  #divFormRegistro {
+    p{
+      margin: 0;
+    }
+    width: 1100px;
+    height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #div1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 1100px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        input{
+          width: 200px;
+        }
+        #div11{
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px;
+        }
+      }
+      #div2{
+        
+        width: 1100px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        input{
+          width: 500px;
+        }
+        #div21{
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }  
+  }
+
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  #loginEnlace {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #loginEnlace:hover {
+    text-decoration: underline;
+  }
+}
+#permiso-denegado{
+
+  align-items: center;
+  height: 80vh;
+}
+.error-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 125vh;
+}
+
+.error-message-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h1 {
+    color: #ff0000;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.error-message a {
+    text-decoration: none;
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.error-message a:hover {
+    background-color: #ddd;
+}
+.sectionBusqueda{
+  margin-top: 10px;
+  width: 800px;
+  height: 500px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  #divFormRegistro {
+    width: 800px;
+    height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #div1{
+        
+        width: 800px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        input{
+          width: 300px;
+          margin-bottom: 1px;
+        }
+        #div12{
+          width: 50%;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #div11{
+          width: 50%;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      #div2{
+        
+        width: 800px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        input{
+          width: 300px;
+        }
+        #div22{
+          width: 50%;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #div21{
+          width: 50%;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }   
+      #div3{
+        width: 800px;
+        height: 90px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #div4{
+        width:800px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #loginEnlace {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #loginEnlace:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+
+
