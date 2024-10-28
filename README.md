@@ -19,4 +19,4 @@
 
 ## Documentación
 
-Para obtener más detalles sobre el proyecto, consulta la [Documentación](https://github.com/Nicoooo26/Biblioteca/edit/main/Documentacion.pdf).
+Para obtener más detalles sobre el proyecto, consulta la [Documentación](https://github.com/Nicoooo26/Biblioteca/blob/main/Documentacion.pdf).
