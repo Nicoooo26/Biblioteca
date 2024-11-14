@@ -54,9 +54,8 @@
 header {
   top: 0;
   right: 0;
-  width: 1190px;
   height: 10vh;
-  background-color: rgb(10, 10, 10); /* Cambia el color de fondo a azul oscuro */
+  background-color: rgb(0, 0, 0); /* Cambia el color de fondo a azul oscuro */
   color: #66fcf1; /* Cambia el color del texto a uno que contraste */
   display: flex;
   align-items: center;
@@ -109,7 +108,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 80vh;
   flex-direction: column;
 }
 
@@ -270,8 +268,7 @@ tbody #devolver:hover {
 
 
 footer {
-  width: 1190px;
-  background-color: black; /* Cambia el color de fondo a azul oscuro */
+  background-color: rgb(0, 0, 0); /* Cambia el color de fondo a azul oscuro */
   color: #66fcf1; /* Cambia el color del texto a uno que contraste */
   display: flex;
   align-items: center;
@@ -807,8 +804,3 @@ box-shadow:  13px 13px 26px #c1c1c1,
     text-decoration: underline;
   }
 }
-
-
-
-
-
